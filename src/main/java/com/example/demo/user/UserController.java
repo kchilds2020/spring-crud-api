@@ -1,5 +1,6 @@
 package com.example.demo.user;
 
+import com.example.demo.loginform.LoginForm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -37,4 +38,5 @@ public class UserController {
                            @RequestParam(required = false) String password){
        return userService.updateUser(id, firstname, lastname, password);
     }
+
 }
